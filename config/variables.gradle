@@ -1,0 +1,13 @@
+def BOOLEAN = "boolean"
+def STRING = "String"
+def INT = "int"
+def TRUE = "true"
+def FALSE = "false"
+def DEBUG_MODE = "DEBUG_MODE"
+
+ext.BOOLEAN = BOOLEAN
+ext.STRING = STRING
+ext.INT = INT
+ext.TRUE = TRUE
+ext.FALSE = FALSE
+ext.DEBUG_MODE = DEBUG_MODE
