@@ -1,7 +1,18 @@
 buildscript {
     apply from: "config/functions.gradle"
+    apply from: "config/versions.gradle"
 
     addRepos(repositories)
+
+    dependencies {
+        classpath(deps.others.build_gradle)
+        classpath(deps.others.kotlin_plugin)
+        classpath(deps.google.services)
+        classpath(deps.google.firebase_crashlytics_gradle)
+        classpath(deps.google.hilt_gradle)
+        classpath(deps.google.maps_platform)
+        classpath(deps.androidx.navigation_safe_args)
+    }
 }
 
 plugins {
