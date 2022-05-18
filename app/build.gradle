@@ -9,6 +9,11 @@ plugins {
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
+apply from: '../config/versions.gradle'
+apply from: '../config/variables.gradle'
+apply from: '../config/functions.gradle'
+
+
 android {
     compileSdk 31
 
@@ -23,8 +28,26 @@ android {
     }
 
     buildTypes {
-        release {
+        applicationVariants.all {
+            variant ->
+                variant.buildConfigField STRING, API, getCustomProperty(API)
+                variant.buildConfigField STRING, LANGUAGE, getCustomProperty(LANGUAGE)
+                variant.buildConfigField STRING, TOP_RATED, getCustomProperty(TOP_RATED)
+                variant.buildConfigField STRING, POPULAR, getCustomProperty(POPULAR)
+                variant.buildConfigField STRING, API_KEY, getCustomProperty(API_KEY)
+                variant.buildConfigField STRING, MAP_API_KEY, getCustomProperty(MAP_API_KEY)
+        }
+
+        debug {
             minifyEnabled false
+            signingConfig signingConfigs.debug
+            buildConfigField BOOLEAN, DEBUG_MODE, TRUE
+        }
+
+        release {
+            minifyEnabled true
+            buildConfigField BOOLEAN, DEBUG_MODE, FALSE
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
