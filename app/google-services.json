@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860651799983",
+    "project_id": "eamovies-efe9d",
+    "storage_bucket": "eamovies-efe9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860651799983:android:919b2c34fb4841a54bdb5a",
+        "android_client_info": {
+          "package_name": "com.arcode.eamovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860651799983-u9gsjh4odci61aa94eof183nete41sku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSiMPfjal1BwsYrHFMVssFaxCt36g-64A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860651799983-u9gsjh4odci61aa94eof183nete41sku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
