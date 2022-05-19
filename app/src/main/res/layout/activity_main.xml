@@ -7,5 +7,24 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <include layout="@layout/widget_toolbar" />
+    <include
+        android:id="@+id/widget_toolbar"
+        layout="@layout/widget_toolbar" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_0dp"
+        android:layout_weight="@integer/weight_1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary"
+        app:itemBackground="@color/color_primary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation" />
 </androidx.appcompat.widget.LinearLayoutCompat>
