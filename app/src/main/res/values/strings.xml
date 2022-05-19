@@ -5,4 +5,7 @@
     <string name="menu_home">Peliculas</string>
     <string name="menu_map">Ubicación</string>
     <string name="menu_gallery">Galería</string>
+
+    <!-- MainActivity-->
+    <string name="main_back_press">Pulse de nuevo atrás para salir</string>
 </resources>
