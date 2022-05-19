@@ -1,6 +1,7 @@
 package com.arcode.eamovies.domain.models
 
 import com.arcode.eamovies.data.database.model.MovieEntity
+import com.arcode.eamovies.data.database.model.PopularEntity
 import com.arcode.eamovies.data.network.model.MovieModel
 
 data class Movie(
@@ -38,6 +39,23 @@ fun MovieModel.toDomain() = Movie(
 )
 
 fun MovieEntity.toDomain() = Movie(
+    adult = adult,
+    backdropPath = backdropPath,
+    genreIds = genreIds,
+    movieId = id,
+    originalLanguage = originalLanguage,
+    originalTitle = originalTitle,
+    overview = overview,
+    popularity = popularity,
+    posterPath = posterPath,
+    releaseDate = releaseDate,
+    title = title,
+    video = video,
+    voteAverage = voteAverage,
+    voteCount = voteCount
+)
+
+fun PopularEntity.toDomain() = Movie(
     adult = adult,
     backdropPath = backdropPath,
     genreIds = genreIds,

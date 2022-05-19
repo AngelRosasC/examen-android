@@ -10,4 +10,9 @@ class MovieService @Inject constructor(private val api: ApiMovieService) {
         val response = api.getTopRatedMovies()
         response.results
     }
+
+    suspend fun getPopularMovie(): List<MovieModel> = withContext(Dispatchers.IO) {
+        val response = api.getPopularMovies()
+        response.results
+    }
 }
