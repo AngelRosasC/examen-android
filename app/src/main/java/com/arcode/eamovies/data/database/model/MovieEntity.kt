@@ -3,6 +3,7 @@ package com.arcode.eamovies.data.database.model
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.arcode.eamovies.domain.models.Movie
 import com.arcode.eamovies.utils.constants.Constants.TABLE_NAME_MOVIES
 
 @Entity(tableName = TABLE_NAME_MOVIES)
@@ -23,4 +24,21 @@ data class MovieEntity(
     @ColumnInfo(name = "video") val video: Boolean,
     @ColumnInfo(name = "voteAverage") val voteAverage: Double,
     @ColumnInfo(name = "voteCount") val voteCount: Int,
+)
+
+fun Movie.toDatabase() = MovieEntity(
+    adult = adult,
+    backdropPath = backdropPath,
+    genreIds = genreIds,
+    movieId = movieId,
+    originalLanguage = originalLanguage,
+    originalTitle = originalTitle,
+    overview = overview,
+    popularity = popularity,
+    posterPath = posterPath,
+    releaseDate = releaseDate,
+    title = title,
+    video = video,
+    voteAverage = voteAverage,
+    voteCount = voteCount
 )

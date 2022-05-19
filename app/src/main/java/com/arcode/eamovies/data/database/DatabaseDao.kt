@@ -7,7 +7,7 @@ import com.arcode.eamovies.utils.constants.Constants.TABLE_NAME_MOVIES
 @Dao
 interface DatabaseDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertTopRatedMovie(movie: List<MovieEntity>)
+    fun insertTopRatedMovie(movie: List<MovieEntity>)
 
     @Query("SELECT * FROM $TABLE_NAME_MOVIES")
     suspend fun getAllTopRatedMovies(): List<MovieEntity>

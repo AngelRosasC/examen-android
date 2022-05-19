@@ -1,12 +1,17 @@
 package com.arcode.eamovies.data.repository
 
+import com.arcode.eamovies.data.database.DatabaseDao
+import com.arcode.eamovies.data.database.model.toDatabase
 import com.arcode.eamovies.data.network.MovieService
 import com.arcode.eamovies.data.network.model.MovieModel
 import com.arcode.eamovies.domain.models.Movie
 import com.arcode.eamovies.domain.models.toDomain
 import javax.inject.Inject
 
-class MovieRepository @Inject constructor(private val api: MovieService) {
+class MovieRepository @Inject constructor(
+    private val api: MovieService,
+    private val dao: DatabaseDao
+) {
 
     suspend fun getTopRatedMoviesFromApi(): List<Movie> {
         val response: List<MovieModel> = api.getMovies()
@@ -14,20 +19,19 @@ class MovieRepository @Inject constructor(private val api: MovieService) {
     }
 
     suspend fun getTopRatedMoviesFromDb(): List<Movie> {
-        // TODO:  database implementation
-        return emptyList()
+        return dao.getAllTopRatedMovies().map { it.toDomain() }
     }
 
-    suspend fun insertTopRatedMoviesToDb(movies: List<Movie>) {
-        // TODO: database implementation
+    fun insertTopRatedMoviesToDb(movies: List<Movie>) {
+        dao.insertTopRatedMovie(movies.map { it.toDatabase() })
     }
 
     suspend fun deleteTopRatedMoviesFromDb(movie: Movie) {
-        // TODO: database implementation
+        dao.deleteTopRatedMovie(movie.toDatabase())
     }
 
     suspend fun deleteAllTopRatedMoviesFromDb() {
-        // TODO: database implementation
+        dao.deleteAllTopRatedMovies()
     }
 }
 
