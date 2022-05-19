@@ -4,6 +4,7 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.arcode.eamovies.data.database.dao.DatabaseDao
+import com.arcode.eamovies.data.database.dao.LocationDao
 import com.arcode.eamovies.data.database.model.LocationEntity
 import com.arcode.eamovies.data.database.model.MovieEntity
 import com.arcode.eamovies.data.database.model.PopularEntity
@@ -26,4 +27,5 @@ import com.arcode.eamovies.utils.converters.IntegerListConverter
 )
 abstract class DatabaseApp : RoomDatabase() {
     abstract fun dao(): DatabaseDao
+    abstract fun locationDao(): LocationDao
 }

@@ -5,6 +5,7 @@ import androidx.annotation.NonNull
 import androidx.room.Room
 import com.arcode.eamovies.data.database.DatabaseApp
 import com.arcode.eamovies.data.database.dao.DatabaseDao
+import com.arcode.eamovies.data.database.dao.LocationDao
 import com.arcode.eamovies.utils.constants.Constants.DATABASE_NAME
 import dagger.Module
 import dagger.Provides
@@ -32,4 +33,11 @@ class DatabaseModule {
     @Singleton
     fun provideDatabaseDao(@ApplicationContext context: Context): DatabaseDao =
         provideDatabaseApp(context).dao()
+
+
+    @NonNull
+    @Provides
+    @Singleton
+    fun provideLocationDao(@ApplicationContext context: Context): LocationDao =
+        provideDatabaseApp(context).locationDao()
 }
