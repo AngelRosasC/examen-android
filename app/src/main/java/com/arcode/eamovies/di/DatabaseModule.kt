@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.annotation.NonNull
 import androidx.room.Room
 import com.arcode.eamovies.data.database.DatabaseApp
-import com.arcode.eamovies.data.database.DatabaseDao
+import com.arcode.eamovies.data.database.dao.DatabaseDao
 import com.arcode.eamovies.utils.constants.Constants.DATABASE_NAME
 import dagger.Module
 import dagger.Provides

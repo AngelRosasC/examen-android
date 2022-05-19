@@ -3,6 +3,7 @@ package com.arcode.eamovies.data.database
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import com.arcode.eamovies.data.database.dao.DatabaseDao
 import com.arcode.eamovies.data.database.model.LocationEntity
 import com.arcode.eamovies.data.database.model.MovieEntity
 import com.arcode.eamovies.data.database.model.PopularEntity

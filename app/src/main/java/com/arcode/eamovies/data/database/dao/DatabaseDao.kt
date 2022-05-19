@@ -1,8 +1,10 @@
-package com.arcode.eamovies.data.database
+package com.arcode.eamovies.data.database.dao
 
 import androidx.room.*
+import com.arcode.eamovies.data.database.model.LocationEntity
 import com.arcode.eamovies.data.database.model.MovieEntity
 import com.arcode.eamovies.data.database.model.PopularEntity
+import com.arcode.eamovies.utils.constants.Constants.TABLE_NAME_LOCATION
 import com.arcode.eamovies.utils.constants.Constants.TABLE_NAME_MOVIES
 import com.arcode.eamovies.utils.constants.Constants.TABLE_NAME_MOVIES_POPULAR
 

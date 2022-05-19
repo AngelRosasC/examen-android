@@ -1,6 +1,6 @@
 package com.arcode.eamovies.data.repository
 
-import com.arcode.eamovies.data.database.DatabaseDao
+import com.arcode.eamovies.data.database.dao.DatabaseDao
 import com.arcode.eamovies.data.database.model.toDatabase
 import com.arcode.eamovies.data.database.model.toDatabasePopular
 import com.arcode.eamovies.data.network.MovieService
