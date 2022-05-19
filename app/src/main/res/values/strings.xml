@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EAMovies</string>
+
+    <!-- Menu -->
+    <string name="menu_home">Peliculas</string>
+    <string name="menu_map">Ubicación</string>
+    <string name="menu_gallery">Galería</string>
 </resources>
