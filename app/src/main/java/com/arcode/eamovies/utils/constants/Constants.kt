@@ -5,4 +5,5 @@ object Constants {
     const val DATABASE_NAME = "EAMovies.db"
     const val TABLE_NAME_MOVIES = "movies"
     const val TABLE_NAME_MOVIES_POPULAR = "popular"
+    const val TABLE_NAME_LOCATION = "location"
 }
