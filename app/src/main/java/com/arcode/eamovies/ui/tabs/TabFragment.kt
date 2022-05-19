@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.arcode.eamovies.databinding.FragmentTabMovieBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class TabFragment : Fragment() {
     private lateinit var binding: FragmentTabMovieBinding
     private lateinit var tabAdapter: TabAdapter
