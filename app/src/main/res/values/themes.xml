@@ -5,7 +5,7 @@
         <item name="colorPrimary">@color/color_primary</item>
         <item name="colorPrimaryVariant">@color/color_primary_dark</item>
         <item name="colorOnPrimary">@color/color_accent</item>
-        <item name="colorControlHighlight">@color/color_primary</item>
+        <item name="colorControlHighlight">@color/color_primary_dark</item>
         <item name="android:textColorPrimary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
