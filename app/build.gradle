@@ -31,6 +31,7 @@ android {
         applicationVariants.all {
             variant ->
                 variant.buildConfigField STRING, API, getCustomProperty(API)
+                variant.buildConfigField STRING, IMAGE_URL, getCustomProperty(IMAGE_URL)
                 variant.buildConfigField STRING, LANGUAGE, getCustomProperty(LANGUAGE)
                 variant.buildConfigField STRING, TOP_RATED, getCustomProperty(TOP_RATED)
                 variant.buildConfigField STRING, POPULAR, getCustomProperty(POPULAR)
