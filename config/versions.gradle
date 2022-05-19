@@ -32,6 +32,7 @@ versions.swipe_refresh = "1.1.0"
 versions.tag_view = "1.1.7"
 versions.base_recycler = "1.0.4"
 versions.expandable_text = "0.1.4"
+versions.service_location = "19.0.1"
 
 def androidx = [:]
 androidx.core = "androidx.core:core:${versions.core}"
@@ -73,6 +74,7 @@ google.firebase_crashlytics_gradle = "com.google.firebase:firebase-crashlytics-g
 google.firebase_firestore = "com.google.firebase:firebase-firestore-ktx"
 google.maps = "com.google.android.gms:play-services-maps:${versions.maps}"
 google.maps_platform = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:${versions.maps_platform}"
+google.service_location = "com.google.android.gms:play-services-location:${versions.service_location}"
 deps.google = google
 
 def test = [:]

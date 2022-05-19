@@ -133,6 +133,8 @@ dependencies {
     // Adapter
     implementation(deps.others.base_recycler)
 
+    // Location
+    implementation(deps.google.service_location)
 }
 
 hilt {
