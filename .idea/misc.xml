@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudio/Pruebas/EAMovies/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2095" />
+        <entry key="..\:/AndroidStudio/Pruebas/EAMovies/app/src/main/res/drawable/style_splash_screen.xml" value="0.1425" />
         <entry key="..\:/AndroidStudio/Pruebas/EAMovies/app/src/main/res/drawable/style_tab_layout.xml" value="0.1425" />
         <entry key="..\:/AndroidStudio/Pruebas/EAMovies/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AndroidStudio/Pruebas/EAMovies/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
