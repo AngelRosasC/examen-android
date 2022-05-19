@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/menu_movie">
+
+    <activity
+        android:id="@+id/main_activity"
+        android:name="com.arcode.eamovies.ui.main.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+    <fragment
+        android:id="@+id/menu_movie"
+        android:name="com.arcode.eamovies.ui.tabs.TabFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_tab_movie" />
+
+    <fragment
+        android:id="@+id/menu_map"
+        android:name="com.arcode.eamovies.ui.maps.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/menu_gallery"
+        android:name="com.arcode.eamovies.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/navigation_popular"
+        android:name="com.arcode.eamovies.ui.popular.PopularFragment"
+        android:label="PopularFragment"
+        tools:layout="@layout/fragment_popular_movie" />
+
+    <fragment
+        android:id="@+id/navigation_top"
+        android:name="com.arcode.eamovies.ui.top.TopMovieFragment"
+        android:label="TopMovieFragment"
+        tools:layout="@layout/fragment_top_movie" />
+
+
+</navigation>
