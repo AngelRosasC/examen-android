@@ -1,10 +1,12 @@
 package com.arcode.eamovies.domain.models
 
 import com.arcode.eamovies.data.network.model.MovieModel
+import com.google.gson.annotations.SerializedName
 
 data class Movie(
     val adult: Boolean,
     val backdropPath: String,
+    val genreIds: List<Int>,
     val id: Int,
     val originalLanguage: String,
     val originalTitle: String,
@@ -21,6 +23,7 @@ data class Movie(
 fun MovieModel.toDomain() = Movie(
     adult = adult,
     backdropPath = backdropPath,
+    genreIds = genreIds,
     id = id,
     originalLanguage = originalLanguage,
     originalTitle = originalTitle,
